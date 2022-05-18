@@ -16,19 +16,33 @@
 
  <body>
       <header>
-          <div>
-              <nav class="menu">
-                   <a href="#inicio"><img id="logo" src="src/fotos/logo.png" alt="logo"></a>
-                   <a href="#inicio"><img id="isotipo" src="src/fotos/isotipo.png" alt="isotipo"></a>
-                   <input type="checkbox" id="btn-menu">
-                   <label for="btn-menu"><img src="src/fotos/menu.png" height="18px" alt="" ></label>
-                   <ul id="secciones">
-                     <li><a href="#biografia">BIOGRAFÍA</a></li>
-                     <li><a href="#portfolio">PORTFOLIO</a></li>
-                     <li><a href="#servicios">SERVICIOS</a></li>
-                     <li><a href="#skills">SKILLS</a></li>
-                     <li><a href="#contacto">CONTACTO</a></li>
-                   </ul>
+          <div class="contenedor">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="src/fotos/logo.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><img src="src/fotos/menu.png" width=20px></span>
+                  </button>
+                  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#biografia">BIOGRAFÍA</a>
+                          </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#servicios">SERVICIOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#skills">SKILLS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contacto">CONTACTO</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </nav>
           </div>
       </header>
@@ -160,30 +174,36 @@
 
       <section id="contacto">
          <h3>Contacto</h3>
-          <div class="contenedor">
-             <form>
-                  <label for="nombre">Nombre</label>
-                  <input type="text" placeholder="..." name="Nombre" id="nombre"/>
-                  <label>Apellido</label>
-                  <input type="text" placeholder="..." name="apellido"/>
-                  <label>E-mail</label>
-                  <input type="email" placeholder="..." name="email"/>
-                  <label>Consulta</label>
-                  <textarea name="comentarios"></textarea>
-                  <input id="boton" class="wow animate__animated animate__pulse" type="submit" value="ENVIAR">
-             </form>
+         <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="...">
           </div>
-      </section>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="...">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="@">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+          </div>
+          <div class="d-grid gap-2 mb-3">
+            <button class="btn btn-primary" type="button">ENVIAR</button>
+          </div>
+     </section>
 
       <footer>
-           <div>
-              <p>© 2022 by Rodrigo Arrechea. All rights reserved.</p>
-              <ul id="redes">
-                 <a href="https://www.instagram.com/rodrigo.arrechea/" target="_blank"><img src="src/fotos/instagram.png" alt="instagram" width="16px"></a>
-                 <a href="https://www.behance.net/rodrigoarrechea" target="_blank"><img src="src/fotos/behance.png" alt="behance" width="23px"></a>
-                 <a href="https://www.linkedin.com/in/rodrigo-arrechea-a64bbb21b/" target="_blank"><img src="src/fotos/linkedin.png" alt="linkedin" width="17px"></a>
-              </ul>
-          </div>
+           <div class="contenedor">
+                <p class="textofooter">© 2022 by Rodrigo Arrechea. All rights reserved.</p>
+                <ul class="redes">
+                   <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/rodrigo.arrechea/" target="_blank"><img src="src/fotos/instagram.png" alt="instagram" width="20px"></a></li>
+                   <li class="ms-3"><a class="text-muted" href="https://www.behance.net/rodrigoarrechea" target="_blank"><img src="src/fotos/behance.png" alt="behance" width="24px"></a></li>
+                   <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/rodrigo-arrechea-a64bbb21b/" target="_blank"><img src="src/fotos/linkedin.png" alt="linkedin" width="19px"></a></li>
+                </ul>
+            </div>
       </footer>
       
         
