@@ -21,19 +21,37 @@ header{
 
 .navbar{
     padding: 0px 20px 0px 20px;
-
-}
-
-.navbar-brand{
-    padding-top: 25px;
-}
-
-.nav-item{
-    padding-top: 28px;
 }
 
 .navbar-nav{
     gap:25px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.navbar-toggler{
+    margin-top: 25px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #FC4C17;
+    transition:0.7s;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color:transparent;
+}
+
+.navbar-dark .navbar-toggler:checked{
+    border-color:#FC4C17;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.0rem;
 }
 
 /*INICIO*/
@@ -148,8 +166,7 @@ h2{
     display: grid;
     grid-template-columns: repeat(2,50%);
     justify-content: center;
-    gap: 15px;
-    margin: 0px 15px 0px 15px;
+    margin: 0px 25px 0px 25px;
 }
 
 /*PORTFOLIO*/
@@ -173,6 +190,7 @@ h2{
     width: 100%;
     margin: auto;
     margin-bottom: 10px;
+    background-color: #FC4C17;
 }
 
 #trabajos img:hover{
@@ -190,7 +208,7 @@ h2{
 
 #prestacion{
     max-width: auto;
-    min-width: 300px;
+    min-width: 350px;
     padding: 15px;
 }
 
@@ -251,9 +269,7 @@ form label{
 .btn-primary:hover{
     background-color: #FC4C17;
     border-color: #FC4C17;
-
 }
-
 
 /*FOOTER*/
 
@@ -333,14 +349,6 @@ p{
     margin: auto;
 }
 
-.grids{
-    display: grid;
-    grid-template-columns: repeat(3,33%);
-    justify-content: center;
-    gap: 15px;
-    margin: 0px 15px 0px 15px;
-}
-
 .conteiner{
     max-width: 1200px;
     margin-left: auto;
@@ -351,32 +359,15 @@ p{
 
 /*RESPONSIVE*/
 
+@media (max-width: 992px) {
+
+    #logo{
+        margin-top: 17px;
+    }
+}
+
+
 @media (max-width: 768px) {
-
-    /*HEADER*/
-
-    header label{
-        display: flex;
-        margin-left: auto;
-    }
-
-    .menu ul{
-        width: 50%;
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        margin-top: 52px;
-        right: 0;
-        background-color: #181A1B;
-        transform: translateX(100%);
-        transition: all 0.5s;
-    }
-
-    #btn-menu:checked ~ #secciones{
-        transform: translateX(0%);
-    }
-
-    /*BIOGRAFÍA*/
 
     .gridsBiografia{
         grid-template-columns: repeat(1,100%);
@@ -385,42 +376,4 @@ p{
     .textobiografia{
         text-align: center;
     }
-
-    /*GENERAL*/
-
-    .grids {
-        grid-template-columns: repeat(2,50%);
-    }
-
-}
-
-@media (max-width: 480px){
-
-    /*HEADER*/
-
-    #isotipo{
-        display:block;
-    }
-    
-    #isotipo:hover{
-        transition:0.7s;
-        opacity: 40%;
-    }
-
-    #logo{
-        display: none;
-    }
-
-    /*BIOGRAFÍA*/
-
-    .textobiografia{
-        text-align: center;
-    }
-
-    /*GENERAL*/
-
-    .grids {
-        grid-template-columns: repeat(1,100%);
-    }
-
 }
