@@ -1,0 +1,39 @@
+/*FOOTER*/
+
+footer{
+    background-color: #181A1B;
+
+    div{
+        display: flex;
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+
+        .textofooter{
+            font-family: $main-font-family;
+            text-align: left;
+            font-size: 1.2rem;
+            font-weight: 200;
+            color: $main-color;
+            margin-left: 0px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding-left: 30px;
+        }
+
+        .redes{
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            padding-right: 30px;
+            list-style: none;
+            margin-top: 25px;
+            margin-bottom: 25px;
+
+            .ms-3:hover{
+                transition:0.7s;
+                opacity: 40%;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+/*HEADER*/
+
+header{
+    background-color: #181A1B;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 1.5rem;
+    min-height: 85px;
+    width: 100%;
+
+    .navbar{
+        padding: 0px 20px 0px 20px;
+
+        .navbar-nav{
+            gap:25px;
+            margin-bottom: 15px;
+            margin-top: 25px;
+
+            .nav-link{
+                color: $main-color;
+            }
+
+            .nav-link:hover{
+                color: #FC4C17;
+                transition:0.7s;
+            }
+        }
+
+        .navbar-toggler{
+            margin-top: 25px;
+            border-color:transparent;
+        }
+
+        .navbar-toggler:checked{
+            border-color:#FC4C17;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: 0 0 0 0.0rem;
+        }
+    }
+}

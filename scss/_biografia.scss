@@ -1,0 +1,54 @@
+/*BIOGRAFIA*/
+
+#biografia{
+    background-color: #323638;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    .gridsBiografia{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        justify-content: center;
+        margin: 0px 25px 0px 25px;
+
+        #fotobiografia{
+            max-width: 220px;
+            width: 100%;
+            margin: auto;
+            display: block;
+            border-radius: 50%;
+            padding-top: 15px;
+        }
+
+        #hobbies{
+            text-align: center;
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            margin: auto;
+
+            p{
+                font-family: $main-font-family;
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: $main-color;
+                margin: 5px 15px 10px 15px;
+            }
+        }
+
+        h4{
+            padding-top: 40px;
+            padding-bottom: 25px;
+        }
+
+        .textobiografia{
+            font-family: $main-font-family;
+            line-height: 1.4;
+            text-align:left;
+            font-size: 1.7rem;
+            font-weight: 300;
+            color: $main-color;
+            padding-top: 15px;
+        }
+    }
+}

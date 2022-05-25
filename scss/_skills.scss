@@ -1,0 +1,29 @@
+/*SKILLS*/
+
+#skills{
+    background-color: #272727;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    .carousel-indicators [data-bs-target]{
+        width: 15px;
+    }
+
+    .carousel-item{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    
+        img{
+            max-height: 70px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .carousel-caption {
+            position: static;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+}
