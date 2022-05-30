@@ -1,0 +1,19 @@
+/*RESPONSIVE*/
+
+@media (max-width: 992px) {
+
+    #logo{
+        margin-top: 17px;
+    } 
+}
+
+@media (max-width: 768px) {
+
+    .gridsBiografia{
+        grid-template-columns: repeat(1,100%);
+    }
+
+    .textobiografia{
+        text-align: center;
+    }
+}

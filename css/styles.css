@@ -1,7 +1,21 @@
 /*IMPORTS*/
+/*MAPS*/
+.fondo--oscuro {
+  background-color: #181A1B; }
+
+.fondo--intermedio {
+  background-color: #272727; }
+
+.fondo--claro {
+  background-color: #323638; }
+
+.contenedor {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto; }
+
 /*HEADER*/
 header {
-  background-color: #181A1B;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -56,7 +70,7 @@ header {
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: -100; }
-  #inicio h1 {
+  #inicio h1, #inicio h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 4rem;
@@ -65,11 +79,9 @@ header {
     max-width: 600px;
     padding: 10px; }
   #inicio h2 {
-    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 3.2rem;
-    color: white;
-    text-align: center; }
+    padding: 0; }
   #inicio #flecha {
     position: absolute;
     bottom: 25px;
@@ -80,45 +92,50 @@ header {
   background-color: #323638;
   padding-top: 45px;
   padding-bottom: 45px; }
-  #biografia .gridsBiografia {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    justify-content: center;
-    margin: 0px 25px 0px 25px; }
-    #biografia .gridsBiografia #fotobiografia {
-      max-width: 220px;
-      width: 100%;
-      margin: auto;
-      display: block;
-      border-radius: 50%;
-      padding-top: 15px; }
-    #biografia .gridsBiografia #hobbies {
-      text-align: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: auto; }
-      #biografia .gridsBiografia #hobbies p {
-        font-family: "Montserrat", sans-serif;
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: white;
-        margin: 5px 15px 10px 15px; }
-    #biografia .gridsBiografia h4 {
-      padding-top: 40px;
-      padding-bottom: 25px; }
-    #biografia .gridsBiografia .textobiografia {
-      font-family: "Montserrat", sans-serif;
-      line-height: 1.4;
-      text-align: left;
-      font-size: 1.7rem;
-      font-weight: 300;
-      color: white;
-      padding-top: 15px; }
+
+.gridsBiografia {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-content: center;
+  gap: 15px;
+  margin: 0px 15px 0px 15px; }
+
+h4 {
+  padding-top: 40px;
+  padding-bottom: 25px; }
+
+#fotobiografia {
+  max-width: 220px;
+  width: 100%;
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+  padding-top: 15px; }
+
+.textobiografia {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+  text-align: left;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: white;
+  padding: 15px 15px 0px 15px; }
+
+#hobbies {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto; }
+  #hobbies p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin: 5px 15px 10px 15px; }
 
 /*PORTFOLIO*/
 #portfolio {
-  background-color: #272727;
   padding-top: 45px;
   padding-bottom: 45px; }
   #portfolio #trabajos {
@@ -138,7 +155,6 @@ header {
 
 /*SERVICIOS*/
 #servicios {
-  background-color: #323638;
   padding-top: 45px;
   padding-bottom: 45px; }
   #servicios #prestacion {
@@ -153,7 +169,6 @@ header {
 
 /*SKILLS*/
 #skills {
-  background-color: #272727;
   padding-top: 45px;
   padding-bottom: 45px; }
   #skills .carousel-indicators [data-bs-target] {
@@ -173,7 +188,6 @@ header {
 
 /*CONTACTO*/
 #contacto {
-  background-color: #323638;
   padding-top: 45px;
   padding-bottom: 45px; }
   #contacto .mb-3 {
@@ -200,34 +214,43 @@ header {
     border-color: #FC4C17; }
 
 /*FOOTER*/
-footer {
-  background-color: #181A1B; }
-  footer div {
+footer div {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto; }
+  footer div .textofooter {
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: white;
+    margin-left: 0px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 30px; }
+  footer div .redes {
     display: flex;
-    max-width: 1200px;
-    width: 100%;
-    margin: auto; }
-    footer div .textofooter {
-      font-family: "Montserrat", sans-serif;
-      text-align: left;
-      font-size: 1.2rem;
-      font-weight: 200;
-      color: white;
-      margin-left: 0px;
-      margin-top: 25px;
-      margin-bottom: 25px;
-      padding-left: 30px; }
-    footer div .redes {
-      display: flex;
-      align-items: center;
-      margin-left: auto;
-      padding-right: 30px;
-      list-style: none;
-      margin-top: 25px;
-      margin-bottom: 25px; }
-      footer div .redes .ms-3:hover {
-        transition: 0.7s;
-        opacity: 40%; }
+    align-items: center;
+    margin-left: auto;
+    padding-right: 30px;
+    list-style: none;
+    margin-top: 25px;
+    margin-bottom: 25px; }
+    footer div .redes .ms-3:hover {
+      transition: 0.7s;
+      opacity: 40%; }
+
+/*RESPONSIVE*/
+@media (max-width: 992px) {
+  #logo {
+    margin-top: 17px; } }
+
+@media (max-width: 768px) {
+  .gridsBiografia {
+    grid-template-columns: repeat(1, 100%); }
+  .textobiografia {
+    text-align: center; } }
 
 /*GENERAL*/
 html {
@@ -262,24 +285,8 @@ p {
   font-weight: 200;
   color: white; }
 
-.contenedor {
-  max-width: 1200px;
-  width: 100%;
-  margin: auto; }
-
 .conteiner {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px 10px 0px 10px; }
-
-/*RESPONSIVE*/
-@media (max-width: 992px) {
-  #logo {
-    margin-top: 17px; } }
-
-@media (max-width: 768px) {
-  .gridsBiografia {
-    grid-template-columns: repeat(1, 100%); }
-  .textobiografia {
-    text-align: center; } }

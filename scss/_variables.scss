@@ -1,2 +1,28 @@
 $main-font-family:'Montserrat', sans-serif;
 $main-color:rgb(255, 255, 255);
+
+/*MAPS*/
+
+$fondo: (
+    oscuro: #181A1B,
+    intermedio:#272727,
+    claro:#323638,
+);
+
+@each $tono, $color in $fondo {
+    .fondo--#{$tono}{
+        background-color: $color;
+    }
+}
+
+$contenedor: (
+    maximoDeAncho: 1200px,
+    ancho:100%,
+    margenes: auto,
+);
+
+.contenedor{
+    max-width: map-get($contenedor, maximoDeAncho);
+    width: map-get($contenedor, ancho);
+    margin: map-get($contenedor, margenes);
+}
