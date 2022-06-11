@@ -1,8 +1,8 @@
 /*CONTACTO*/
 
 #contacto{
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 105px;
+    padding-bottom: 85px;
 
     .mb-3{
         max-width: 500px;
@@ -17,6 +17,10 @@
             font-size: 1.7rem;
             text-align:left;
             color: $main-color;
+        }
+
+        .form-control {
+            font-size: 1.4rem;
         }
     }
 

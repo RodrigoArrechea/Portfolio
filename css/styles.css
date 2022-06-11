@@ -90,8 +90,8 @@ header {
 /*BIOGRAFIA*/
 #biografia {
   background-color: #323638;
-  padding-top: 45px;
-  padding-bottom: 45px; }
+  padding-top: 105px;
+  padding-bottom: 85px; }
 
 .gridsBiografia {
   display: grid;
@@ -135,8 +135,8 @@ header {
 
 /*PORTFOLIO*/
 #portfolio {
-  padding-top: 45px;
-  padding-bottom: 45px; }
+  padding-top: 105px;
+  padding-bottom: 85px; }
   #portfolio #trabajos {
     max-width: auto;
     min-width: 280px;
@@ -193,8 +193,8 @@ header {
 
 /*SERVICIOS*/
 #servicios {
-  padding-top: 45px;
-  padding-bottom: 15px; }
+  padding-top: 105px;
+  padding-bottom: 85px; }
   #servicios #prestacion {
     max-width: auto;
     min-width: 300px;
@@ -207,31 +207,25 @@ header {
 
 /*SKILLS*/
 #skills {
-  padding-top: 45px;
-  padding-bottom: 45px; }
+  padding-top: 105px;
+  padding-bottom: 85px; }
   #skills h3 {
     padding-bottom: 35px; }
-  #skills .carousel-indicators [data-bs-target] {
-    width: 15px; }
-  #skills .carousel-item {
+  #skills .swiffy-slider {
+    max-width: 350px;
     margin-left: auto;
-    margin-right: auto;
-    float: none; }
-    #skills .carousel-item img {
-      max-height: 100px;
-      margin-left: auto;
-      margin-right: auto; }
-    #skills .carousel-item .carousel-caption {
-      position: static;
-      padding-top: 25px;
-      padding-bottom: 25px; }
-      #skills .carousel-item .carousel-caption h4 {
-        padding-top: 10px; }
+    margin-right: auto; }
+    #skills .swiffy-slider li {
+      text-align: center; }
+      #skills .swiffy-slider li .icono {
+        max-height: 100px; }
+      #skills .swiffy-slider li h4 {
+        margin-top: 20px; }
 
 /*CONTACTO*/
 #contacto {
-  padding-top: 45px;
-  padding-bottom: 45px; }
+  padding-top: 105px;
+  padding-bottom: 85px; }
   #contacto .mb-3 {
     max-width: 500px;
     margin-left: auto;
@@ -244,6 +238,8 @@ header {
       font-size: 1.7rem;
       text-align: left;
       color: white; }
+    #contacto .mb-3 .form-control {
+      font-size: 1.4rem; }
   #contacto .btn-primary {
     color: white;
     background-color: transparent;
