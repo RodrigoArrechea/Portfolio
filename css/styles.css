@@ -129,7 +129,7 @@ header {
     font-size: 1.7rem;
     font-weight: 300;
     color: white;
-    padding: 15px 15px 0px 15px; }
+    padding: 30px 15px 0px 15px; }
     .gridsBiografia .textobiografia b {
       font-weight: 600; }
 
@@ -194,7 +194,7 @@ header {
 /*SERVICIOS*/
 #servicios {
   padding-top: 105px;
-  padding-bottom: 85px; }
+  padding-bottom: 55px; }
   #servicios #prestacion {
     max-width: auto;
     min-width: 300px;
