@@ -216,25 +216,29 @@
 
     <section id="contacto" class="fondo--claro">
       <h3>Contacto</h3>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-        <input type="text" name="nombre" class="form-control" id="exampleFormControlInput1" placeholder="...">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-        <input type="text" name="apellido" class="form-control" id="exampleFormControlInput1" placeholder="...">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email</label>
-        <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="@">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
-      </div>
-      <div class="d-grid gap-2 mb-3">
-        <button class="btn btn-primary" type="button" aria-label="enviar datos">ENVIAR</button>
-      </div>
+      <form id="contactform" action="//formspree.io/rodrigoarrechea.dg@gmail.com" method="POST">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+          <input type="text" name="nombre" class="form-control" id="exampleFormControlInput1" placeholder="...">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+          <input type="text" name="apellido" class="form-control" id="exampleFormControlInput1" placeholder="...">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input type="email" name="_replyto" class="form-control" id="exampleFormControlInput1" placeholder="@">
+        </div>
+        <input type="hidden" name="_subject" value="Website contact" />
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" name="mensaje" rows="8"></textarea>
+        </div>
+        <input type="text" name="_gotcha" style="display:none" />
+        <div class="d-grid gap-2 mb-3">
+          <button class="btn btn-primary" type="button" aria-label="enviar datos">ENVIAR</button>
+        </div>
+      </form>
     </section>
 
     <footer class="fondo--oscuro">
